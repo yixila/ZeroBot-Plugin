@@ -311,7 +311,7 @@ func init() {
 		os.Exit(0)
 	}
 }
-//测试
+
 func main() {
 	if !strings.Contains(runtime.Version(), "go1.2") { // go1.20之前版本需要全局 seed，其他插件无需再 seed
 		rand.Seed(time.Now().UnixNano()) //nolint: staticcheck
